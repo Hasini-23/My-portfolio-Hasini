@@ -72,3 +72,4 @@ export default function StarfieldBackground() {
 
   return <canvas ref={canvasRef} className="starfield-canvas" aria-hidden="true" />;
 }
+

@@ -155,3 +155,4 @@ export const achievementsData = [
     icon: "Atom"
   }
 ];
+

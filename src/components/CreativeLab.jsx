@@ -92,7 +92,7 @@ export default function CreativeLab() {
   };
 
   return (
-    <section id="ai-lab" style={{ padding: '6rem 0', position: 'relative' }}>
+    <section id="ai-lab" style={{ padding: '6rem 0', position: 'relative' }} aria-label="AI Superpower and Curiosity Lab">
       <div className="container" style={{ position: 'relative', zIndex: 10 }}>
         
         {/* Section Heading */}
@@ -121,7 +121,7 @@ export default function CreativeLab() {
           alignItems: 'center',
           gap: '0.75rem'
         }}>
-          <span style={{ fontSize: '1.25rem' }}>💡</span>
+          <span style={{ fontSize: '1.25rem' }} role="img" aria-label="Hint">💡</span>
           <p style={{ fontSize: '0.85rem', color: '#DDD6FE', lineHeight: 1.5, margin: 0 }}>
             <strong>Discovery Hint:</strong> Adjust Hasini's curiosity sliders on the left to synthesize builder archetypes, or type commands like <code style={{ color: '#FCD34D', background: '#0B0818', padding: '0.1rem 0.35rem', borderRadius: '0.25rem' }}>vision</code> or <code style={{ color: '#FCD34D', background: '#0B0818', padding: '0.1rem 0.35rem', borderRadius: '0.25rem' }}>motto</code> into the interactive terminal on the right to unlock her 2030 vision!
           </p>
@@ -130,8 +130,8 @@ export default function CreativeLab() {
         {/* Main Lab Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '2.5rem',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+          gap: '2rem',
           alignItems: 'start'
         }}>
           
@@ -180,7 +180,7 @@ export default function CreativeLab() {
                   max="100"
                   value={sliderVals.ml}
                   onChange={(e) => handleSliderChange('ml', e.target.value)}
-                  aria-label="AI & Machine Learning Curiosity Slider"
+                  aria-label="AI and Machine Learning Curiosity percentage slider"
                 />
               </div>
 
@@ -198,7 +198,7 @@ export default function CreativeLab() {
                   max="100"
                   value={sliderVals.algo}
                   onChange={(e) => handleSliderChange('algo', e.target.value)}
-                  aria-label="Algorithmic Logic Slider"
+                  aria-label="Algorithmic Logic and Rigor percentage slider"
                 />
               </div>
 
@@ -216,7 +216,7 @@ export default function CreativeLab() {
                   max="100"
                   value={sliderVals.design}
                   onChange={(e) => handleSliderChange('design', e.target.value)}
-                  aria-label="Celestial UI Design Slider"
+                  aria-label="Celestial UI and Design Sense percentage slider"
                 />
               </div>
 
@@ -234,7 +234,7 @@ export default function CreativeLab() {
                   max="100"
                   value={sliderVals.quantum}
                   onChange={(e) => handleSliderChange('quantum', e.target.value)}
-                  aria-label="Quantum Ambition Slider"
+                  aria-label="Quantum and Frontier Ambition percentage slider"
                 />
               </div>
 
@@ -322,7 +322,7 @@ export default function CreativeLab() {
 
           {/* Right: Interactive Secret Terminal */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <div className="terminal-box">
+            <div className="terminal-box" role="region" aria-label="Interactive Terminal System">
               
               {/* Terminal Title Bar */}
               <div className="terminal-topbar">
@@ -342,6 +342,9 @@ export default function CreativeLab() {
               {/* Terminal Logs Output */}
               <div
                 ref={terminalEndRef}
+                id="terminal-output"
+                aria-live="polite"
+                aria-label="Terminal output log"
                 style={{
                   height: '20rem',
                   overflowY: 'auto',
@@ -379,6 +382,7 @@ export default function CreativeLab() {
                   <button
                     key={cmd}
                     onClick={() => handleRunCommand(cmd)}
+                    aria-label={`Run ${cmd} command`}
                     style={{
                       padding: '0.2rem 0.55rem',
                       fontSize: '0.75rem',
@@ -422,7 +426,7 @@ export default function CreativeLab() {
                     fontFamily: 'var(--font-mono)',
                     fontSize: '0.8rem'
                   }}
-                  aria-label="Terminal command input"
+                  aria-label="Terminal command prompt input"
                 />
               </div>
 

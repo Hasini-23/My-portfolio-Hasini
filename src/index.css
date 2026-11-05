@@ -43,16 +43,26 @@ body {
   position: relative;
   overflow-x: hidden;
   line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   letter-spacing: -0.02em;
   line-height: 1.25;
+  word-break: break-word;
 }
 
 code, pre, .font-mono {
   font-family: var(--font-mono);
+}
+
+/* Accessibility: Keyboard focus indicators */
+:focus-visible {
+  outline: 2px solid var(--color-lavender);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 /* Custom Scrollbar */
@@ -87,8 +97,8 @@ code, pre, .font-mono {
   position: absolute;
   top: 10%;
   left: 5%;
-  width: 500px;
-  height: 500px;
+  width: min(500px, 90vw);
+  height: min(500px, 90vw);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(139, 92, 246, 0.16) 0%, rgba(9, 7, 19, 0) 70%);
   filter: blur(80px);
@@ -100,8 +110,8 @@ code, pre, .font-mono {
   position: absolute;
   top: 45%;
   right: 5%;
-  width: 450px;
-  height: 450px;
+  width: min(450px, 85vw);
+  height: min(450px, 85vw);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(196, 181, 253, 0.12) 0%, rgba(9, 7, 19, 0) 70%);
   filter: blur(90px);
@@ -128,7 +138,7 @@ code, pre, .font-mono {
 
 /* Glassmorphism Styles */
 .glass-nav {
-  background: rgba(9, 7, 19, 0.82);
+  background: rgba(9, 7, 19, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(167, 139, 250, 0.16);

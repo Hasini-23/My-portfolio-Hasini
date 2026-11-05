@@ -74,7 +74,7 @@ export default function Contact() {
         {/* Contact Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
           gap: '2.5rem',
           maxWidth: '56rem',
           margin: '0 auto'

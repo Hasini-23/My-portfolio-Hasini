@@ -38,3 +38,4 @@ export function Linkedin({ size = 18, color = 'currentColor', ...props }) {
     </svg>
   );
 }
+

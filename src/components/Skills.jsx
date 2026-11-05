@@ -33,7 +33,7 @@ export default function Skills() {
         {/* Skills Cards Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
           gap: '2rem'
         }}>
           {skillsData.map((category, idx) => (
