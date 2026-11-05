@@ -21,7 +21,7 @@ The portfolio is designed to be an authentic, living proof-of-work showcasing:
 3. An original creative feature: the **AI Superpower & Curiosity Lab**.
 4. Cloud-native hosting architecture on AWS Amplify connected to high-speed global edge distribution (Amazon CloudFront).
 
-- **GitHub Repository:** [https://github.com/Hasini-23/aws-builder-portfolio](https://github.com/Hasini-23) *(or designated repo)*
+- **GitHub Repository:** [https://github.com/Hasini-23/My-portfolio-Hasini](https://github.com/Hasini-23/My-portfolio-Hasini)
 - **Live AWS Amplify URL:** `https://main.<APP_ID>.amplifyapp.com` *(populated upon Amplify deployment)*
 
 ---
@@ -89,7 +89,6 @@ Located at `#ai-lab`, this feature provides a multi-modal interactive discovery 
 |                                                                                 |
 +---------------------------------------------------------------------------------+
 ```
-*(Add high-resolution screenshots from your browser preview to `assets/screenshots/` prior to final submission)*
 
 ---
 
@@ -101,8 +100,8 @@ Located at `#ai-lab`, this feature provides a multi-modal interactive discovery 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Hasini-23/<YOUR_REPO_NAME>.git
-cd <YOUR_REPO_NAME>
+git clone https://github.com/Hasini-23/My-portfolio-Hasini.git
+cd My-portfolio-Hasini
 ```
 
 ### 2. Install Dependencies
@@ -155,8 +154,6 @@ frontend:
 ### Step-by-Step Deployment Instructions:
 1. **Push Code to GitHub:**
    ```bash
-   git add .
-   git commit -m "feat: complete portfolio and documentation"
    git push origin main
    ```
 2. **Log in to AWS:** Open the [AWS Management Console](https://console.aws.amazon.com/).
@@ -166,7 +163,7 @@ frontend:
 4. **Connect GitHub:**
    - Choose **GitHub** as the source repository and click **Next**.
    - Authorize AWS Amplify to access your GitHub account.
-   - Select your portfolio repository and the **`main`** branch.
+   - Select your repository (`My-portfolio-Hasini`) and the **`main`** branch.
 5. **Confirm Build Settings:**
    - Amplify will automatically detect the Vite build configuration from `amplify.yml`.
    - Build output directory should display **`dist`**.
@@ -175,6 +172,16 @@ frontend:
    - Amplify will provision, build, and deploy the application across AWS's global CDN in approximately 1 to 2 minutes.
 7. **Obtain Live URL:**
    - Once the build indicators turn green, your live public URL (e.g. `https://main.dXXXXXXXX.amplifyapp.com`) will be generated.
+
+---
+
+## 📊 GitHub Stats & Activity
+
+<div align="center">
+  <img src="https://github-readme-stats.shion.dev/api?username=Hasini-23&theme=dark&hide_border=false&include_all_commits=false&count_private=false" alt="Hasini's GitHub Stats" /><br/>
+  <img src="https://streak-stats.demolab.com/?user=Hasini-23&theme=dark&hide_border=false" alt="Hasini's GitHub Streak" /><br/>
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=Hasini-23&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="Top Languages" />
+</div>
 
 ---
 
