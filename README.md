@@ -1,5 +1,5 @@
-# Hasini Pathan - Personal Cloud Portfolio
-### AWS Student Builder Challenge Edition
+# Hasini Pathan - Personal Portfolio
+### React + Vite Edition • AWS Student Builder Challenge 2026
 
 > **"Dream beyond limits, learn without boundaries, and build with purpose."**  
 > — Hasini Pathan, First-Year B.Tech CSE (AI-ML) @ Amrita Vishwa Vidyapeetham
@@ -8,100 +8,88 @@
 
 ## 🌟 Overview
 
-This is the official personal portfolio website for **Hasini Pathan**, designed and architected for the **AWS Student Builder Challenge** using **Antigravity IDE** and deployed on **AWS Amplify**.
+This is the official personal portfolio website for **Hasini Pathan**, engineered with **React**, **Vite**, **JavaScript**, **CSS**, and **Lucide React** for the **AWS Student Builder Challenge** using **Antigravity IDE**.
 
-The portfolio embodies an authentic, inspiring first-year journey—combining academic engineering rigor with curiosity in Artificial Intelligence, Machine Learning, and emerging technologies.
-
-### Key Highlights
-- **Design System ("Celestial Lavender"):** Premium dark mode aesthetic with deep obsidian (`#090713`), electric violet accents (`#8B5CF6`), celestial lavender glows (`#C4B5FD`), frosted glassmorphism, and ambient cosmic particle starfield.
-- **Creative Interactive Feature ("AI Superpower & Curiosity Lab"):**
-  - **Dynamic Curiosity Radar & Sliders:** Live computation of builder archetypes (e.g. *The Neural Architect*, *The Purposeful Innovator*) based on curiosity weights.
-  - **Core Thought & Principle Generator:** Authentic reflections on growth, consistency, and purposeful innovation.
-  - **Interactive Secret Terminal:** Interactive command-line interface (`hasini@amrita:~$`) supporting commands like `about`, `motto`, `skills`, `amrita`, `vision`, `aws`, and `clear`.
-- **Verified Credentials & Honest Skills Matrix:** Full transparency highlighting active foundations (Python, C/C++, HTML/CSS, JS, Git) and technologies in progress (Data Science, Math for ML, AWS Amplify, Quantum concepts).
-- **Responsive & Lightweight:** Blazing-fast static architecture with zero bloated dependencies, 100% responsive across mobile, tablet, and desktop screens.
-- **AWS Amplify Ready:** Includes pre-configured `amplify.yml` for automated continuous deployment from GitHub to AWS global CloudFront CDN.
+The portfolio showcases Hasini's authentic first-year engineering journey—combining academic coursework at **Amrita Vishwa Vidyapeetham** with curiosity in Artificial Intelligence, Machine Learning algorithms, and cloud technologies.
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Technical Stack & Architecture
 
+- **Core Framework:** React 18
+- **Build Tool:** Vite 5 (Ultra-fast HMR and optimized production rollup bundler)
+- **Design System:** Custom **Celestial Lavender** aesthetic
+  - Deep obsidian (`#090713`)
+  - Rich twilight violet (`#120D26`)
+  - Electric violet accents (`#8B5CF6`)
+  - Celestial lavender glows (`#C4B5FD`)
+  - Frosted glassmorphism (`glass-card`, `glass-nav`, `glass-button`, `glass-badge`)
+- **Iconography:** Lucide React + Custom SVG Brand Icons
+- **Dynamic Background:** HTML5 Canvas reactive cosmic particle starfield
+
+### Component Hierarchy
 ```
-/Users/pathanhasini/Desktop/AWS/
-├── index.html            # Main semantic HTML structure & Tailwind UI
-├── css/
-│   └── styles.css        # Celestial Lavender variables, glassmorphism, animations
-├── js/
-│   ├── app.js            # Core UI logic, cosmic starfield, project modals, contact
-│   └── ai-lab.js         # Interactive AI Superpower Lab, sliders, terminal logic
-├── assets/               # Image & media directory
-├── amplify.yml           # AWS Amplify continuous deployment build specification
-├── .gitignore            # Git exclusion rules
-└── README.md             # Documentation & deployment guide
+src/
+├── main.jsx                     # Application entry point
+├── App.jsx                      # Root layout coordinator
+├── index.css                    # Celestial Lavender design system & responsive styling
+├── data/
+│   ├── portfolioData.js         # Verified personal details, skills, projects, milestones
+│   └── aiLabData.js             # Archetype synthesizer, principles, terminal commands
+└── components/
+    ├── Navbar.jsx               # Sticky glassmorphism header with mobile drawer
+    ├── Hero.jsx                 # Impact headline, motto card, challenge badge & quick specs
+    ├── About.jsx                # The 4 Pillars (Amrita Rigor, Beginner Mindset, Builder, Vision)
+    ├── Skills.jsx               # Honest skills matrix (Core, AI/ML, Tools)
+    ├── Projects.jsx             # Featured challenge & data science projects
+    ├── ProjectModal.jsx         # Deep-dive interactive project inspection modal
+    ├── CreativeLab.jsx          # AI Superpower & Curiosity Lab (Sliders, Archetype, Terminal)
+    ├── Achievements.jsx         # Vertical learning & academic roadmap
+    ├── Contact.jsx              # Direct email launcher, real-time IST clock, copy link
+    ├── Footer.jsx               # AWS Student Builder attribution & motto
+    ├── StarfieldBackground.jsx  # Interactive cosmic starfield canvas
+    └── BrandIcons.jsx           # Clean SVG brand icons (GitHub, LinkedIn)
 ```
 
 ---
 
 ## 🚀 How to Run Locally
 
-Because this project uses standard modern web technologies without complex node dependency chains, you can run and preview it instantly:
-
-### Option 1: Python Built-In HTTP Server (Recommended)
-Open your terminal in this directory and run:
+### 1. Start Development Server
 ```bash
-python3 -m http.server 3000
+npm run dev
 ```
-Then open your browser to:
-```
-http://localhost:3000
-```
+Open **`http://localhost:5173`** in your browser.
 
-### Option 2: Direct Browser Launch
-Simply double-click `index.html` or open it with any web browser (Safari, Chrome, Edge, Firefox).
+### 2. Build for Production
+```bash
+npm run build
+```
+The optimized bundle will be compiled to the `dist/` directory.
+
+### 3. Preview Production Build
+```bash
+npm run preview
+```
 
 ---
 
-## ☁️ How to Deploy to AWS Amplify
+## 🧪 Creative Feature: "AI Superpower & Curiosity Lab"
 
-### Method A: Automated Continuous Deployment via GitHub (Recommended for Challenge)
-
-1. **Initialize Git and Commit the Code:**
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: complete AWS Student Builder Challenge portfolio"
-   ```
-
-2. **Push to GitHub:**
-   Create a new public repository on your GitHub account (`https://github.com/Hasini-23/aws-builder-portfolio` or similar) and run:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/Hasini-23/<YOUR_REPO_NAME>.git
-   git push -u origin main
-   ```
-
-3. **Deploy on AWS Amplify Console:**
-   - Sign in to the [AWS Management Console](https://console.aws.amazon.com/).
-   - Open **AWS Amplify Hosting**.
-   - Click **Deploy an app** > Select **GitHub** as the source code provider.
-   - Authorize AWS Amplify to access your GitHub repository and select your repository & `main` branch.
-   - Amplify will automatically detect `amplify.yml` included in this project.
-   - Click **Save and Deploy**.
-   - In less than 2 minutes, your website will be live on a fast, secure HTTPS URL (e.g., `https://main.dXXXXXXXX.amplifyapp.com`)!
-
-### Method B: Direct Drag-and-Drop / Manual Zip Deployment
-
-1. Compress the project folder contents (`index.html`, `css/`, `js/`, `assets/`, `amplify.yml`) into a `.zip` file.
-2. In the AWS Amplify Console, select **Deploy without Git** (manual upload).
-3. Upload the `.zip` file and click **Save and Deploy**.
+Located at `#ai-lab`, this is a fully interactive experience:
+1. **Interactive Curiosity Radar & Sliders:** Adjust parameters (*AI & ML Curiosity*, *Algorithmic Rigor*, *UI & Design Sense*, *Quantum Ambition*) to dynamically recompute Hasini's Builder Power Index and synthesize live archetypes (*The Neural Architect*, *The Algorithmic Strategist*, *The Celestial UI Architect*, *The Frontier Explorer*, *The Purposeful Innovator*).
+2. **Hasini's Guiding Principles:** Interactive insight card with fade transitions cycling through Hasini's authentic philosophy.
+3. **Interactive Secret Terminal:** A simulated bash terminal (`hasini@amrita:~$`) supporting:
+   - `help`, `about`, `motto`, `skills`, `amrita`, `vision`, `aws`, `contact`, `clear`
+   - Includes quick-run shortcut buttons for mobile/touch devices.
 
 ---
 
-## 🔗 Official Links
+## 🔗 Official Profiles
 
 - **GitHub:** [https://github.com/Hasini-23](https://github.com/Hasini-23)
 - **LinkedIn:** [https://www.linkedin.com/in/hasini-pathan-916b97427/](https://www.linkedin.com/in/hasini-pathan-916b97427/)
-- **Institution:** Amrita Vishwa Vidyapeetham
+- **College:** Amrita Vishwa Vidyapeetham
 
 ---
 
