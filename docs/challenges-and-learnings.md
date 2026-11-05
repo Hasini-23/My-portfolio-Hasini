@@ -44,3 +44,4 @@ Building this cloud portfolio for the AWS Student Builder Challenge provided sev
 ### Challenge 4: Balancing Ambition with Authentic First-Year Credibility
 - **The Issue:** In developer challenges, it is tempting to claim senior-level mastery over every technology.
 - **The Solution:** Developed a transparent three-tier skills taxonomy (*Active Core*, *Hands-on Practice*, and *Future Horizon / Actively Learning*), showcasing genuine passion and mathematical rigor at Amrita Vishwa Vidyapeetham without inflating qualifications.
+

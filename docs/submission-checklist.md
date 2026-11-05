@@ -62,3 +62,4 @@ Paste into your challenge submission form:
 - **AWS Services Used:** AWS Amplify Hosting, Amazon CloudFront, Amazon S3, AWS Certificate Manager
 - **Creative Feature Summary:** AI Superpower & Curiosity Lab (Detailed in `docs/project-description.md`)
 - **Key Learnings & Challenges:** (Copy from `docs/challenges-and-learnings.md`)
+

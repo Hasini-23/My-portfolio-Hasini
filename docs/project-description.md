@@ -70,3 +70,4 @@ The **AI Superpower & Curiosity Lab** is the central interactive feature designe
 6. **Milestones Roadmap:** Vertical progression timeline from 2025 admission to 2030 research horizons.
 7. **Contact Hub:** Direct `mailto:` draft trigger without fake API claims, live local time in Andhra Pradesh (IST), and quick profile copy utilities.
 8. **Footer:** Attributions, Amrita details, and smooth return-to-top trigger.
+

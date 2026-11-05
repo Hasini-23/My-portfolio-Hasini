@@ -83,3 +83,4 @@ frontend:
 - **No Hardcoded Credentials:** The project does not include, request, or expose AWS access keys, secret keys, IAM credentials, or sensitive tokens.
 - **Git Provider Integration:** Amplify connects directly via GitHub's OAuth app authorization, keeping repository credentials secure.
 - **Client-Side Safety:** No backend API keys are embedded in client bundles; contact requests use direct browser `mailto:` drafts.
+
